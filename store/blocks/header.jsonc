@@ -1,0 +1,236 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": ["sticky-layout#desktop"]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop", "header-row#2-desktop"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  
+  "header-row#2-desktop": {
+    "children": ["vtex.menu@2.x:menu#websites", "flex-layout.col#spacer"],
+    "props": {
+      "blockClass": "menu-link",
+      "inverted": "true",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "vtex.menu@2.x:menu#websites": {
+    "children": ["menu-item#promo", "menu-item#palmeiras", "menu-item#corinthians", "menu-item#cadastro"]
+  },
+  "menu-item#promo": {
+    "props": {
+      "id": "menu-item-promo",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "PROMOÇÃO",
+        "text": "PROMOÇÃO"
+      }
+    }
+  },
+  "menu-item#palmeiras": {
+    "props": {
+      "id": "menu-item-palmeiras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palmeiras",
+        "noFollow": false,
+        "tagTitle": "PALMEIRAS",
+        "text": "PALMEIRAS"
+      }
+    }
+  },
+  "menu-item#corinthians": {
+    "props": {
+      "id": "menu-item-corinthians",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/corinthians",
+        "noFollow": false,
+        "tagTitle": "CORINTHIANS",
+        "text": "CORINTHIANS"
+      }
+    }
+  },
+  "menu-item#cadastro": {
+    "props": {
+      "id": "menu-item-cadastro",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cadastro",
+        "noFollow": false,
+        "tagTitle": "CADASTRE-SE",
+        "text": "CADASTRE-SE"
+      }
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "80"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["vtex.menu@2.x:menu#websites#mobile"]
+  },
+  "header-row#2-mobile": {
+    "children": ["vtex.menu@2.x:menu#websites", "flex-layout.col#spacer"],
+    "props": {
+      "blockClass": "menu-link",
+      "inverted": "true",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/upmedal.png",
+      "width": "80"
+    }
+  },
+  "vtex.menu@2.x:menu#websites#mobile": {
+    "children": [ "menu-item#promo#mobile", "menu-item#palmeiras#mobile", "menu-item#corinthians#mobile", "menu-item#cadastro#mobile"]
+  },
+  "menu-item#promo#mobile": {
+    "props": {
+      "id": "menu-item-promo",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "PROMOÇÃO",
+        "text": "PROMOÇÃO"
+      }
+    }
+  },
+  "menu-item#palmeiras#mobile": {
+    "props": {
+      "id": "menu-item-palmeiras",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/palmeiras",
+        "noFollow": false,
+        "tagTitle": "PALMEIRAS",
+        "text": "PALMEIRAS"
+      }
+    }
+  },
+  "menu-item#corinthians#mobile": {
+    "props": {
+      "id": "menu-item-corinthians",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/corinthians",
+        "noFollow": false,
+        "tagTitle": "CORINTHIANS",
+        "text": "CORINTHIANS"
+      }
+    }
+  },
+  "menu-item#cadastro#mobile": {
+    "props": {
+      "id": "menu-item-cadastro",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cadastro",
+        "noFollow": false,
+        "tagTitle": "CADASTRE-SE",
+        "text": "CADASTRE-SE"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+"store.custom#corinthians": {
+    "path": "/corinthians"
+  },
+  "store.custom#palmeiras": {
+    "path": "/palmeiras"
+  },
+  "store.custom#cadastro": {
+  "path": "/cadastro"
+}
+}

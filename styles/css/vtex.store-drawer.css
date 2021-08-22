@@ -1,0 +1,9 @@
+.menuContainer {  
+    margin: 10 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuIcon {
+    color: #59ff00;
+}

@@ -1,0 +1,29 @@
+.imageElement {
+    border-radius: 15px;
+}
+
+.paginationDot--isActive {
+    background: #59ff00;
+}
+
+.sliderArrows {
+    bottom: -35px;
+    margin-right:25.6%;
+    margin-left:25.6%;
+}
+
+.caretIcon {
+    color: #ffff;
+}
+
+.sliderLayoutContainer {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.slideChildrenContainer--products {
+    background-color: #4d4b4b;
+    border-radius: 10px;
+    margin-right:10px;
+    margin-left:10px;
+}

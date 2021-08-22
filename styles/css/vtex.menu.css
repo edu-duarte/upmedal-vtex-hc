@@ -1,0 +1,28 @@
+.menuItem {  
+    background: rgba(0, 0, 0, 0.2);
+    margin: 3px;
+    border-radius: 3px;
+    justify-content: center;
+}
+
+.menuItem:hover {  
+    background: #59ff00;;
+}
+.menuItem:active {  
+    background: #59ff00;;
+}
+.styledLinkContent {
+    color: #FFFF;
+    font-size: large;
+    justify-content: center;
+}
+
+.styledLinkContent:hover {
+    color: rgb(0, 0, 0);
+    justify-content: center;
+}
+
+.listItemActive {
+    border-bottom: 2px solid #59FF00;
+    color: #59FF00; 
+}

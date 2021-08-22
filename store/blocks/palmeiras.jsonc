@@ -1,0 +1,80 @@
+{
+    "store.custom#palmeiras": {
+      "blocks": ["list-context.image-list#demo","rich-text#palmeiras" , "list-context.product-list#palmeiras"]
+    },
+    "list-context.image-list#demo": {
+      "children": ["slider-layout#demo-images"],
+      "props": {
+        "height": 350,
+        "images": [
+          {
+            "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T145347Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=652179a827f4c86bef6d4cf2fb7597fc8442d3c8ccda41a568210063a672113f",
+            "description": "something something"
+          },
+          {
+            "image": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e?response-content-disposition=inline%3B%20filename%3D%22W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png%22%3B%20filename%2A%3DUTF-8%27%27W6S9NXIJ40I86DJI17S40123EYNM3J6CNF24M4Y04GGC9TBSXU.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210818%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210818T145347Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=f912c7957eb41f1d9e68ce11f03782b977de5e19a9c5d36e55e7fef18878cdd3",
+            "description": "something something"
+          }
+        ]
+      }
+    },
+    "slider-layout#demo-images": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true
+      }
+    },
+    "rich-text#palmeiras": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "PALMEIRAS",
+        "textColor": "c-on-emphasis",
+        "font": "t-heading-5",
+        "blockClass": "help-message"
+      }
+    },
+    "list-context.product-list#palmeiras": {
+      "blocks": ["product-summary.shelf#palmeiras"],
+      "children": ["slider-layout#products"],
+      "props": {
+        "category": "20/23",
+        "hideUnavailableItems": true,
+        "blockClass": "products"
+      }
+    },
+  
+    "slider-layout#products": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 3,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": false,
+        "blockClass": "products",
+        "autoplay": {
+          "timeout": 50000000,
+          "stopOnHover": true
+        }
+      }
+    },
+    "product-summary.shelf#palmeiras": {
+      "children": [
+        "product-summary-name",
+        "product-summary-image",
+        "product-selling-price",
+        "product-summary-buy-button"
+      ],
+      "props": {
+        "blockClass": "productsshelf"
+      }
+    }
+  }
+
+  
